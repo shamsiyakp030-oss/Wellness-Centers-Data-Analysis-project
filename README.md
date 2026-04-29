@@ -49,11 +49,6 @@ Clean and user-friendly design
 Map-based geographic insights
 Dynamic insights panel
 
-## Dashboard Preview
-
-<img width="1186" height="669" alt="Screenshot 2026-04-29 202718" src="https://github.com/user-attachments/assets/119a16e2-ebcd-4d92-be1a-a463c73b4001" />
-
-<img width="1183" height="665" alt="Screenshot 2026-04-29 202750" src="https://github.com/user-attachments/assets/d264d21b-0c89-41ff-8d73-1f2edc822298" />
 
 ## video presentation
 
