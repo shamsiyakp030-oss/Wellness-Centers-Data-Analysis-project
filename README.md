@@ -1,6 +1,6 @@
 # Wellness Center Analytics Dashboard
 
-Python & Power BI Data Analysis Project
+Python & Power BI Data Analysis Project.
 
 ## Project Overview
 
