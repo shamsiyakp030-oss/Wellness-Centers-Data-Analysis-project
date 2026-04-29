@@ -14,8 +14,8 @@ Compare different healthcare categories
 Build an interactive dashboard for better insights
 
 ## Tools & Technologies
-Python (Pandas, NumPy) for data cleaning and analysis
-Power BI for dashboard creation and visualization
+* Python (Pandas, NumPy) for data cleaning and analysis
+* Power BI for dashboard creation and visualization
 
 ## Methodology
 Data Cleaning (Python)
