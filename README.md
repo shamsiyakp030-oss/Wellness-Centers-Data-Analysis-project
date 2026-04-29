@@ -1,87 +1,73 @@
-#  Wellness Center Analytics Dashboard  
-### Python & Power BI Data Analysis Project
+# Wellness Center Analytics Dashboard
 
----
+Python & Power BI Data Analysis Project
 
-##  Project Overview
-This project focuses on analyzing wellness center data to understand healthcare availability, doctor distribution, and category-wise services across different cities.
+## Project Overview
 
-Using **Python for data cleaning and analysis** and **Power BI for visualization**, the project transforms raw data into meaningful insights through an interactive dashboard.
+This project analyzes wellness center data to evaluate healthcare availability, doctor distribution, and category-wise services across different cities.
+It combines Python for data preprocessing and Power BI for interactive visualization, transforming raw data into meaningful insights.
 
----
+## Objectives
+Analyze doctor distribution across cities
+Identify areas with low healthcare coverage
+Compare different healthcare categories
+Build an interactive dashboard for better insights
 
-##  Objectives
-- Analyze doctor distribution across cities  
-- Identify areas with low healthcare coverage  
-- Compare different healthcare categories  
-- Build an interactive dashboard for insights  
+## Tools & Technologies
+Python (Pandas, NumPy) for data cleaning and analysis
+Power BI for dashboard creation and visualization
 
----
+## Methodology
+Data Cleaning (Python)
 
-##  Tools & Technologies
-- Python (Pandas, NumPy)  
-- Power BI  
+The dataset was cleaned by handling missing values, removing duplicates, correcting data types, and standardizing text fields to ensure accuracy and consistency.
 
----
+## Data Analysis (Python)
 
-## Workflow
+Data was grouped and aggregated to calculate total and average doctor counts across cities and categories, helping identify key patterns.
 
-###  Data Cleaning (Python)
-- Handle missing values  
-- Remove duplicates  
-- Fix data types  
-- Clean text data  
+## Data Visualization (Power BI)
 
-```python
-import pandas as pd
+An interactive dashboard was created with:
 
-df = pd.read_csv("data.csv")
+KPI cards (Total Doctors, Total Centers, Average Doctors)
+Map visualization (geographical distribution)
+Bar chart (city-wise comparison)
+Donut chart (category distribution)
+Slicers for filtering
+Insights panel using DAX
 
-df['WellnessCentreName'] = df['WellnessCentreName'].fillna("Unknown")
-df['Category'] = df['Category'].fillna("Unknown")
-
-df.drop_duplicates(inplace=True)
-
-df['DoctorCount'] = pd.to_numeric(df['DoctorCount'], errors='coerce')
-
-###  Data Analysis (Python)
-Group data by city and category
-Calculate totals and averages
-city_summary = df.groupby('CityName')['DoctorCount'].sum()
-category_summary = df.groupby('Category')['DoctorCount'].sum()
-
-##  Data Visualization (Power BI)
-KPI Cards (Total Doctors, Total Centers, Average Doctors)
-Map Visualization (Latitude & Longitude)
-Bar Chart (City-wise comparison)
-Donut Chart (Category distribution)
-Slicers (City, Category)
-Insights Panel (DAX-based)
-
-### Key Insights
-Healthcare is concentrated in major cities
+## Key Insights
+Healthcare resources are concentrated in major cities
 Allopathy category dominates doctor availability
-Uneven distribution across regions
-Some cities have low healthcare coverage
+There is an uneven distribution of doctors across regions
+Some cities show low healthcare coverage, indicating gaps
 
-### Dashboard Features
-Interactive filtering
-Map-based visualization
-Category comparison
-Clean and professional UI
+## Dashboard Features
+Interactive filters and slicers
+Clean and user-friendly design
+Map-based geographic insights
 Dynamic insights panel
-### Dashboard Preview
 
-(Add your Power BI dashboard screenshot here)
+## Dashboard Preview
 
-### Conclusion
+<img width="1186" height="669" alt="Screenshot 2026-04-29 202718" src="https://github.com/user-attachments/assets/119a16e2-ebcd-4d92-be1a-a463c73b4001" />
 
-This project highlights patterns in healthcare distribution and helps identify areas that require improvement.
+<img width="1183" height="665" alt="Screenshot 2026-04-29 202750" src="https://github.com/user-attachments/assets/d264d21b-0c89-41ff-8d73-1f2edc822298" />
 
-### Future Improvements
-Add population-based analysis
-Include time-based trends
-Build predictive models
+## video presentation
+
+
+
+## Conclusion
+
+This project highlights important patterns in healthcare distribution and helps identify areas where improvements are needed.
+
+## Future Improvements
+Include population-based analysis
+Add time-based trends
+Extend to predictive analytics
+
 ## Author
 
 Shamsiya kp
